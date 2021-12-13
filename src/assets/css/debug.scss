@@ -1,8 +1,14 @@
 @import './variables.scss';
 
 main.debug {
-    height: 300px;
+    color: $col_white;
     background-color: black;
+
+    .container {
+        font-size: 20px;
+        font-weight: 600;
+        padding: 50px 0;
+    }
 }
 
 footer.debug {

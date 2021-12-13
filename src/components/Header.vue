@@ -33,7 +33,7 @@ export default {
 
     header {
         height: 120px;
-        background-color: $bg_white;
+        background-color: $col_white;
 
         .container {
             height: 100%;

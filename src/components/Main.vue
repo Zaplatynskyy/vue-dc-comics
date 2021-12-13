@@ -1,6 +1,8 @@
 <template>
     <main class="debug">
-        
+        <div class="container">
+            Content goes here
+        </div>
     </main>
 </template>
 
@@ -11,5 +13,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+    
 </style>
