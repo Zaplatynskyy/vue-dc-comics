@@ -23,7 +23,5 @@ export default {
 
 <style lang="scss">
 @import './assets/css/global.scss';
-@import './assets/css/debug.scss'
-
-
+@import './assets/css/debug.scss';
 </style>

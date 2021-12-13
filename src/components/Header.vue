@@ -48,7 +48,6 @@ export default {
             .header_nav {
                 
                 ul {
-                    list-style: none;
 
                     li {
                         display: inline-block;
