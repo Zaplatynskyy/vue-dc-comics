@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
 /*---------------------
     RESET
 ---------------------*/
@@ -15,4 +17,17 @@
 .container {
     width: 80%;
     margin: 0 auto;
+}
+
+
+/*---------------------
+    TYPE
+---------------------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
