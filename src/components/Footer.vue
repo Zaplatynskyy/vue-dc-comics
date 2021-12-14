@@ -1,5 +1,5 @@
 <template>
-    <footer class="debug">
+    <footer>
         <TopFooter/>
         <MainFooter/>
         <BottomFooter/>

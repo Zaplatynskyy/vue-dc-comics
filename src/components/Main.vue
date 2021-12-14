@@ -1,5 +1,5 @@
 <template>
-    <main class="debug">
+    <main>
         <div id="jumbotron">
 
         </div>
@@ -9,10 +9,7 @@
                 <button class="btn current">Current Series</button>
 
                 <div class="row">
-                    <div class="box" v-for="(box,i) in boxs" :key="i">
-                        <img :src="box.thumb" alt="">
-                        <div class="title_serie">{{box.series}}</div>
-                    </div>
+                    <Box  v-for="(box,i) in boxs" :key="i" :box="box"/>
                 </div>
 
                 <button class="btn load">Load More</button>
@@ -22,8 +19,13 @@
 </template>
 
 <script>
+import Box from './main_components/Box.vue'
+
 export default {
     name : 'Main',
+    components : {
+        Box,
+    },
     data() {
         return {
             boxs : [
@@ -142,22 +144,6 @@ export default {
                 .box {
                     width: calc(100% / 6 - 20px);
                     margin: 20px 0;
-
-                    img {
-                        width: 100%;
-                        height: 230px;
-                        object-fit: cover;
-                        object-position: top;
-                    }
-
-                    .title_serie {
-                        font-size: 18px;
-                        text-align: left;
-                        text-transform: uppercase;
-                        color: $col_white;
-                        margin: 10px 0;
-
-                    }
                 }
             }
 
