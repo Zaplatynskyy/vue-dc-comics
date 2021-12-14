@@ -37,13 +37,9 @@ export default {
             justify-content: space-between;
 
             .btn {
-                color: white;
-                font-weight: bold;
-                text-transform: uppercase;
                 background-color: $secondary_color;
                 border: 1px solid $primary_color;
                 padding: 10px;
-                cursor: pointer;
 
                 &:hover {
                     background-color: black;
