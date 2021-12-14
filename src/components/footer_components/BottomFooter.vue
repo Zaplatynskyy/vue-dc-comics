@@ -57,7 +57,8 @@ export default {
                     margin: 0 10px;
                 }
 
-                li:first-child {
+                li:first-child a {
+                    color: $primary_color;
                     font-weight: bold;
                     text-transform: uppercase;
                 }

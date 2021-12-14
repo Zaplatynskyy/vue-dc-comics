@@ -1,13 +1,9 @@
 @import './variables.scss';
 
 main.debug {
-    color: $col_white;
-    background-color: black;
-
     .container {
-        font-size: 20px;
-        font-weight: 600;
-        padding: 50px 0;
+        height: 400px;
+        background-color: red;
     }
 }
 
