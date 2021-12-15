@@ -9,16 +9,7 @@
             <!-- link di collegamento header -->
             <nav class="header_nav">
                 <ul>
-                    <li><a href="#">Characters</a></li>
-                    <li><a href="#" class="selected">Comics</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Tv</a></li>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Collectibles</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Fans</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Shop</a></li>
+                    <li v-for="(link,i) in headerLinks" :key="i"><a :href="link.url" :class="{selected: link.selected}">{{link.title}}</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,7 +18,64 @@
 
 <script>
 export default {
-    name : 'Header'
+    name : 'Header',
+    data() {
+        return {
+            // array di link di collegamento header
+            headerLinks : [
+                {
+                    url: '#',
+                    title : 'Characters',
+                    selected : false
+                },
+                {
+                    url: '#',
+                    title : 'Comics',
+                    selected : true
+                },
+                {
+                    url: '#',
+                    title : 'Movies',
+                    selected : false
+                },
+                {
+                    url: '#',
+                    title : 'Tv',
+                    selected : false
+                },
+                {
+                    url: '#',
+                    title : 'Games',
+                    selected : false
+                },
+                {
+                    url: '#',
+                    title : 'Collectibles',
+                    selected : false
+                },
+                {
+                    url: '#',
+                    title : 'Videos',
+                    selected : false
+                },
+                {
+                    url: '#',
+                    title : 'Fans',
+                    selected : false
+                },
+                {
+                    url: '#',
+                    title : 'News',
+                    selected : false
+                },
+                {
+                    url: '#',
+                    title : 'Shop',
+                    selected : false
+                }
+            ]
+        }
+    }
 }
 </script>
 

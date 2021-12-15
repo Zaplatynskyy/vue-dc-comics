@@ -25,6 +25,7 @@
 
 <script>
 import Box from './main_components/Box.vue'
+// import array degli elementi comic book dal file json fornito
 import array from '../../dc-comics.json'
 
 export default {
