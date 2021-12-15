@@ -1,7 +1,10 @@
 <template>
   <div id="app">
+    <!-- componente header -->
     <Header/>
+    <!-- componente main -->
     <Main/>
+    <!-- componente footer -->
     <Footer/>
   </div>
 </template>
@@ -23,5 +26,4 @@ export default {
 
 <style lang="scss">
 @import './assets/css/global.scss';
-@import './assets/css/debug.scss';
 </style>

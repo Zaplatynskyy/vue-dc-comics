@@ -1,7 +1,10 @@
 <template>
     <footer>
+        <!-- componente top footer -->
         <TopFooter/>
+        <!-- componente footer centrale -->
         <MainFooter/>
+        <!-- componente bottom footer con link social -->
         <BottomFooter/>
     </footer>
 </template>

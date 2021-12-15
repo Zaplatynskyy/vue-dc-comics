@@ -1,9 +1,12 @@
 <template>
     <header>
         <div class="container">
+            <!-- img logo header -->
             <a href="#">
                 <img src="../assets/img/dc-logo.png" alt="logo dc comics">
             </a>
+
+            <!-- link di collegamento header -->
             <nav class="header_nav">
                 <ul>
                     <li><a href="#">Characters</a></li>
@@ -40,11 +43,12 @@ export default {
             display: flex;
             justify-content: space-between;
             align-items: center;
-
+            // dimensioni logo
             img {
                     height: 80px;
             }
 
+            // proprietà link di collegamento header
             .header_nav {
                 
                 ul {

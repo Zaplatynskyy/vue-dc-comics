@@ -2,9 +2,10 @@
   
     <div class="bottom_footer">
         <div class="container">
-
+            <!-- bottone login del footer bottom -->
             <button class="btn">Sign-up now!</button>
 
+            <!-- link social di collegamento del footer bottom -->
             <ul class="social_nav">
                 <li><a href="#">Follow us</a></li>
                 <li><a href="#"><img src="../../assets/img/footer-facebook.png" alt=""></a></li>
@@ -35,7 +36,7 @@ export default {
             padding: 30px 0;
             display: flex;
             justify-content: space-between;
-
+            // <!-- bottone login del footer bottom -->
             .btn {
                 background-color: $secondary_color;
                 border: 1px solid $primary_color;
@@ -52,7 +53,8 @@ export default {
                     display: inline-block;
                     margin: 0 10px;
                 }
-
+                
+                // <!-- link social di collegamento del footer bottom -->
                 li:first-child a {
                     color: $primary_color;
                     font-weight: bold;

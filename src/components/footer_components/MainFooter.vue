@@ -2,8 +2,9 @@
   
     <div class="main_footer">
         <div class="container">
-
+            <!-- link utili footer centrale -->
             <nav class="footer_nav">
+                <!-- prima colonna link -->
                 <div class="ul_col one">
                     <ul id="dc_comics">
                         <li><a href="#">Dc Comics</a></li>
@@ -23,6 +24,7 @@
                     </ul>
                 </div>
 
+                <!-- seconda colonna link -->
                 <div class="ul_col two">
                     <ul id="dc">
                         <li><a href="#">Dc</a></li>
@@ -40,6 +42,7 @@
                     </ul>
                 </div>
 
+                <!-- terza colonna link -->
                 <div class="ul_col three">
                     <ul id="sites">
                         <li><a href="#">Sites</a></li>
@@ -52,6 +55,7 @@
                 </div>
             </nav>
 
+            <!-- logo footer centrale -->
             <div class="footer_logo">
                 <img src="../../assets/img/dc-logo-bg.png" alt="">
             </div>
@@ -93,7 +97,7 @@ export default {
                     li {
                         margin: 5px 0;
                     }
-
+                    // li:firs-child rappresenta il titolo di ogni colonna dei link utili
                     li:first-child {
                         margin-bottom: 15px;
                     }
@@ -103,6 +107,11 @@ export default {
                         font-weight: bold;
                         color: $col_white;
                         text-transform: uppercase;
+
+                        &:hover {
+                            text-decoration: none;
+                            cursor: default;
+                        }
                     }
 
                     a {
@@ -115,6 +124,7 @@ export default {
                 }
             }
 
+            // dimensioni logo footer
             img {
                 width: 600px;
             }

@@ -1,17 +1,22 @@
 <template>
     <main>
+        <!-- sezione jumbotron -->
         <div id="jumbotron">
 
         </div>
 
+        <!-- sezione corpo main della pagina -->
         <div id="main_content">
             <div class="container">
+                <!-- bottone fissato in alto a sinistra 'current series' -->
                 <button class="btn current">Current Series</button>
 
                 <div class="row">
+                    <!-- componente Box del singolo elemento -->
                     <Box  v-for="(box,i) in boxs" :key="i" :box="box"/>
                 </div>
 
+                <!-- bottone fissato in basso 'load more' -->
                 <button class="btn load">Load More</button>
             </div>
         </div>
@@ -28,6 +33,7 @@ export default {
     },
     data() {
         return {
+            // array data degli elementi comic book
             boxs : [
                 {
                     "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
@@ -110,12 +116,14 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/css/variables.scss';
 
+    // sezione jumbotron
     #jumbotron {
         height: 400px;
         background-image: url('../assets/img/jumbotron.jpg');
         background-size: cover;
     }
 
+    // <!-- sezione corpo main della pagina -->
     #main_content {
         background-color: $bg_main;
 
@@ -128,6 +136,7 @@ export default {
                 background-color: $primary_color;
             }
 
+            // bottone fissato in alto a sinistra 'current series'
             .btn.current {
                 font-size: 18px;
                 padding: 10px 20px;
@@ -141,12 +150,14 @@ export default {
                 flex-wrap: wrap;
                 justify-content: space-around;
 
+                // dimensioni elemento box
                 .box {
                     width: calc(100% / 6 - 20px);
                     margin: 20px 0;
                 }
             }
 
+            // bottone fissato in basso 'load more'
             .btn.load {
                 padding: 10px 40px;
             }
